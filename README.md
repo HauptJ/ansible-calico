@@ -6,26 +6,36 @@ A brief description of the role goes here.
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+This role only requires Ansible version 2+
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+These are the variables that you can override anywhere in your playbook flow:
+
+ETCD version installed on your host:
+etcd.port: 2379
+
+Calico version you want to install:
+calico.version: 1.2.0
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+This role depends on:
+
+ * [lucazz.etcd](https://github.com/lucazz/ansible-etcd)
+
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Using this roles as as simples as:
 
-    - hosts: servers
+- hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - lucazz.etcd
+         - lucazz.calico
 
 License
 -------
@@ -34,5 +44,4 @@ BSD
 
 Author Information
 ------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Lucas do Amaral Saboya Works as Site Reliability Engineer @ [HE:labs](https://www.helabs.com)
