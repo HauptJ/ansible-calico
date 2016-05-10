@@ -1,0 +1,2 @@
+- name: lucazz.calico
+  src: https://github.com/lucazz/ansible-calico.git
