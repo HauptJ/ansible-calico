@@ -1,6 +1,8 @@
 Calico Ansible Role
 =========
 
+[![Build Status](https://travis-ci.org/lucazz/ansible-calico.svg?branch=master)](https://travis-ci.org/lucazz/ansible-calico)
+
 A brief description of the role goes here.
 
 Requirements
