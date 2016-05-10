@@ -1,2 +1,4 @@
+- name: lucazz.etcd
+  src: https://github.com/lucazz/ansible-etcd.git
 - name: lucazz.calico
   src: https://github.com/lucazz/ansible-calico.git
